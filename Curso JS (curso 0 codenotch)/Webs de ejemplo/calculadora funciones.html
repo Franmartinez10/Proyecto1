@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pequeña Calculadora</title>
+    <script>
+
+      do {
+
+
+            var operacion=prompt("¿Qué operación desea realizar?");
+            var num1=prompt("primer número");
+            var num2=prompt("segundo número");
+
+          if (operacion=="sumar") {
+
+            sumar(num1,num2);  }
+
+          else if (operacion=="restar")
+      {
+          restar(num1,num2); }
+          else if (operacion=="multiplicar")
+      {
+          multiplicar(num1,num2); }
+          else if (operacion=="dividir")
+      {
+          dividir(num1,num2); }
+
+          else { alert("introduzca una operacion disponible"); }
+
+          repetir=prompt("Desea repetir?");
+
+        }  while (repetir=="Si");
+
+
+
+        function sumar(num1,num2){
+
+          alert("La suma es: " + (parseInt(num1)+parseInt(num2)));
+
+        }
+        function restar(num1,num2){
+
+          alert("La resta es: " + (parseInt(num1)-parseInt(num2)));
+
+        }
+        function multiplicar(num1,num2){
+
+          alert("La multiplicacion es: " + (parseInt(num1)*parseInt(num2)));
+
+        }
+        function dividir(num1,num2){
+
+          alert("La division es: " + (parseInt(num1)/parseInt(num2)));
+
+        }
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <script>
+ /* var repetir="Si";
+do {
+
+
+      var operacion=prompt("¿Qué operación desea realizar?");
+      var num1=prompt("primer número");
+      var num2=prompt("segundo número");
+
+    if (operacion=="sumar") {
+
+      sumar(num1,num2);  }
+
+    else if (operacion=="restar")
+{
+    restar(num1,num2); }
+    else if (operacion=="multiplicar")
+{
+    multiplicar(num1,num2); }
+    else if (operacion=="dividir")
+{
+    dividir(num1,num2); }
+
+    else { alert("introduzca una operacion disponible"); }
+
+    repetir=prompt("Desea repetir?");
+
+  }  while (repetir=="Si");
+
+
+    */  </script>
+
+
+  </body>
+</html>

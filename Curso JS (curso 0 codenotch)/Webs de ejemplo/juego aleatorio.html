@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My HTML Page</title>
+
+    </head>
+<body>
+
+  <table width="40%" border="0">
+    <tr>
+        <td><label for ="textfield"></label>
+        <input type="textfield" id="c_mensaje"></td>
+        <td><label for ="textfield2"></label>
+        <input type="text" name="textfield2" id="c_intentos"></td>
+    </tr>
+
+  </table>
+    <script >
+
+   var aleatorio=Math.round(Math.random()*100);
+
+var minum, intentos;
+
+minum=0;
+intentos=0;
+
+
+var mensaje=document.getElementById('c_mensaje')
+
+var intentos_consumidos=document.getElementById("c_intentos");
+
+
+//do{
+    minum=prompt("Introduce un numero de 0 a 100");
+
+if(aleatorio>minum){
+
+  mensaje.value="más alto";
+}
+
+if (aleatorio<minum){
+
+  mensaje.value="más bajo";
+}
+
+
+intentos++;
+
+intentos_consumidos.value=intentos;
+
+}while(aleatorio!=minum);
+
+document.write("Has gastado " + intentos + "Intentos");
+
+
+
+
+
+  </script>
+</body>
+</html>

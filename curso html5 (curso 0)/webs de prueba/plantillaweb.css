@@ -1,0 +1,15 @@
+header{ background-color: blue;
+        text-align: center;
+        padding: 20px;}
+h1{     color: white;
+        font-size: 3em;}
+footer{ color: whitesmoke;
+        background-color: blue;
+        text-align: center;
+        padding: 20px;
+        clear: both;}
+section{ width: 30%;
+        float: left;
+        margin-right: 1%;}
+
+

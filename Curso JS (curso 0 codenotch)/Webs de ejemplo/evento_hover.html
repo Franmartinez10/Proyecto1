@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+#imagenes{
+	width:1475px;
+	margin:auto;
+
+}
+img{
+	padding:20px 30px;
+	width: 200px;
+}
+
+#mensaje_img1 {
+	position: absolute;
+	left: 623px;
+	top: 392px;
+	width: 581px;
+	height: 215px;
+	background-color: #FF9;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 25px;
+	border: dotted 2px #00F;
+}
+</style>
+
+<script src="Js/jquery-3.5.1.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+	$("#mensaje_img1").hide();
+	document.getElementById("imagen1").addEventListener("click",mostrar,false);
+	document.getElementById("imagen2").addEventListener("click",mostrar,false);
+
+	function mostrar(){
+		$("#mensaje_img1").toggle();
+	}});
+
+
+// $("#imagen1").click(se_ve,no_se_ve);
+	//$("#imagen2").toggle();
+	//$("#imagen3").toggle(se_ve,no_se_ve);
+//	$("#imagen4").toggle(se_ve,no_se_ve);
+
+
+
+
+
+
+
+function no_se_ve(){
+	$("#mensaje_img1").hide();
+}
+function se_ve(){
+	$("#mensaje_img1").show();
+}
+</script>
+</head>
+
+<body>
+
+<div id="mensaje_img1">Preciosa encina en mitad de la meseta castellana......</div>
+<div id="imagenes">
+
+<img src="imagenes/foto1.jpg" id="imagen1">
+<img src="imagenes/foto1.jpg" id="imagen2">
+<img src="imagenes/foto1.jpg" id="imagen3">
+<img src="imagenes/foto1.jpg" id="imagen4">
+
+
+
+</div>
+</body>
+</html>

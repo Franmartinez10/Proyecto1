@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My HTML Page</title>
+</head>
+<body>
+  <script>
+
+var trabajadores=[];
+var persona="";
+var contador=0;
+
+while (persona!="salir") {
+
+      persona=prompt("introduce una persona");
+      trabajadores[contador]=persona;
+      contador++;
+}
+trabajadores.pop();
+for (var i = 0; i <trabajadores.length; i++) {
+document.write(trabajadores[i] + "</br>");
+}
+
+</script>
+</body>
+</html>
